@@ -8,8 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Inter:wght@400&display=swap">
+<!-- Charte Cocollet (dépôt Cocollet/brand), même origine. Les valeurs après la virgule ne servent que si elle manque. -->
+<link rel="stylesheet" href="/brand/tokens.css">
 <style>
-  :root { --bg: #121212; --mascot: #ecb166; --eye: #0a0a0a; --text: #e8e3da; --muted: #8c857b; }
+  :root { --bg: var(--cc-bg, #121212); --mascot: var(--cc-amber, #ecb166); --eye: var(--cc-on-amber, #0a0a0a); --text: var(--cc-text, #e8e3da); --muted: var(--cc-text-muted, #8c857b); }
   html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
   body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 48px 56px; box-sizing: border-box; }
   svg { width: clamp(120px, 26vmin, 220px); height: auto; }
